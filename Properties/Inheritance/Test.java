@@ -2,7 +2,7 @@ package Properties.Inheritance;// Java program to illustrate the
 // concept of inheritance
 
 // base class
-class Bicycle {
+/* final  -- here we can add final to prevent Inheritance */  class Bicycle {
 	// the Bicycle class has two fields
 	public int gear;
 	public int speed;
@@ -69,6 +69,8 @@ public class Test {
 	{
 
 		MountainBike mb = new MountainBike(3, 100, 25);
+		mb.setHeight(45);
+		System.out.println(mb.seatHeight);
 		System.out.println(mb.toString());
 	}
 }
